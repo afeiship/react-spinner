@@ -12,12 +12,12 @@ export default class extends Component {
   static propTypes = {
     className: PropTypes.string,
     value: PropTypes.bool,
-    spin: PropTypes.element,
+    indicator: PropTypes.element,
     caption: PropTypes.any
   };
 
   static defaultProps = {
-    spin: (
+    indicator: (
       <img
         className="is-image"
         src={'https://assets-cdn.shimo.im/assets/images/loading-b67e5a67dc.gif'}
@@ -28,7 +28,14 @@ export default class extends Component {
   };
 
   render() {
-    const { className, spin, caption, value, children, ...props } = this.props;
+    const {
+      className,
+      indicator,
+      caption,
+      value,
+      children,
+      ...props
+    } = this.props;
     return (
       <div
         data-component={CLASS_NAME}
@@ -36,9 +43,10 @@ export default class extends Component {
         className={classNames(CLASS_NAME, className)}
         {...props}>
         <div hidden={!value} className={`${CLASS_NAME}__bd`}>
-          <span className={`${CLASS_NAME}__spin`}>{spin}</span>
+          <span className={`${CLASS_NAME}__indicator`}>{indicator}</span>
           {caption && <div className={`${CLASS_NAME}__caption`}>{caption}</div>}
         </div>
+        <div hidden={!value} className={`${CLASS_NAME}__overlay`}></div>
         {children}
       </div>
     );
