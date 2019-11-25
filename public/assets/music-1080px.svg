@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; display: block;" width="100px" height="100px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+  <g transform="rotate(180 50 50)"><rect x="6.333333333333334" y="29" width="4" height="6.81492" fill="#2067f8">
+    <animate attributeName="height" calcMode="spline" values="28;42;5.6000000000000005;28" times="0;0.33;0.66;1" dur="1.1627906976744184s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" repeatCount="indefinite" begin="0s"></animate>
+  </rect><rect x="14.666666666666668" y="29" width="4" height="29.8489" fill="#28da93">
+    <animate attributeName="height" calcMode="spline" values="28;42;5.6000000000000005;28" times="0;0.33;0.66;1" dur="1.1627906976744184s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" repeatCount="indefinite" begin="-0.4228329809725158s"></animate>
+  </rect><rect x="23" y="29" width="4" height="28.0002" fill="#4da0f2">
+    <animate attributeName="height" calcMode="spline" values="28;42;5.6000000000000005;28" times="0;0.33;0.66;1" dur="1.1627906976744184s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" repeatCount="indefinite" begin="-0.3171247357293868s"></animate>
+  </rect><rect x="31.333333333333336" y="29" width="4" height="14.4804" fill="#2067f8">
+    <animate attributeName="height" calcMode="spline" values="28;42;5.6000000000000005;28" times="0;0.33;0.66;1" dur="1.1627906976744184s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" repeatCount="indefinite" begin="-0.9513742071881607s"></animate>
+  </rect><rect x="39.666666666666664" y="29" width="4" height="36.3413" fill="#28da93">
+    <animate attributeName="height" calcMode="spline" values="28;42;5.6000000000000005;28" times="0;0.33;0.66;1" dur="1.1627906976744184s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" repeatCount="indefinite" begin="-0.5285412262156447s"></animate>
+  </rect><rect x="48" y="29" width="4" height="14.9131" fill="#4da0f2">
+    <animate attributeName="height" calcMode="spline" values="28;42;5.6000000000000005;28" times="0;0.33;0.66;1" dur="1.1627906976744184s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" repeatCount="indefinite" begin="-0.10570824524312895s"></animate>
+  </rect><rect x="56.333333333333336" y="29" width="4" height="41.5336" fill="#2067f8">
+    <animate attributeName="height" calcMode="spline" values="28;42;5.6000000000000005;28" times="0;0.33;0.66;1" dur="1.1627906976744184s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" repeatCount="indefinite" begin="-0.7399577167019027s"></animate>
+  </rect><rect x="64.66666666666667" y="29" width="4" height="32.7804" fill="#28da93">
+    <animate attributeName="height" calcMode="spline" values="28;42;5.6000000000000005;28" times="0;0.33;0.66;1" dur="1.1627906976744184s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" repeatCount="indefinite" begin="-0.8456659619450316s"></animate>
+  </rect><rect x="73" y="29" width="4" height="41.293" fill="#4da0f2">
+    <animate attributeName="height" calcMode="spline" values="28;42;5.6000000000000005;28" times="0;0.33;0.66;1" dur="1.1627906976744184s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" repeatCount="indefinite" begin="-0.6342494714587736s"></animate>
+  </rect><rect x="81.33333333333333" y="29" width="4" height="25.1845" fill="#2067f8">
+    <animate attributeName="height" calcMode="spline" values="28;42;5.6000000000000005;28" times="0;0.33;0.66;1" dur="1.1627906976744184s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" repeatCount="indefinite" begin="-0.2114164904862579s"></animate>
+  </rect><rect x="89.66666666666667" y="29" width="4" height="6.00682" fill="#28da93">
+    <animate attributeName="height" calcMode="spline" values="28;42;5.6000000000000005;28" times="0;0.33;0.66;1" dur="1.1627906976744184s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" repeatCount="indefinite" begin="-1.0570824524312894s"></animate>
+  </rect></g>
+</svg>
