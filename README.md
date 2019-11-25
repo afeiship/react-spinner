@@ -16,35 +16,38 @@ npm install -S @feizheng/react-spinner
   ```
 2. import js
   ```js
-  import React from 'react';
+  import ReactSpinner from '../src/main';
   import ReactDOM from 'react-dom';
-  import ReactSpinner from 'react-spinner';
-  
-  // your app:
-  class App extends React.Component{
-    render(){
+  import React from 'react';
+  import './assets/style.scss';
+
+  class App extends React.Component {
+    constructor(inProps) {
+      super(inProps);
+      this.state = {
+        loading: false
+      };
+    }
+    onClick = (inEvent) => {
+      const { loading } = this.state;
+      this.setState({ loading: !loading });
+    };
+
+    render() {
+      const { loading } = this.state;
+      console.log('loading', loading);
       return (
-        <ReactSpinner />
-      )
+        <div className="app-container">
+          <button onClick={this.onClick}>Toggle Loading</button>
+          <ReactSpinner value={loading} />
+        </div>
+      );
     }
   }
 
-  // render to dom:
-  ReactDOM.render(<App/>, document.getElementById('app'));
+  ReactDOM.render(<App />, document.getElementById('app'));
+
   ```
 
 ## documentation
 - https://afeiship.github.io/react-spinner/
-
-## resources
-- https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
-- https://www.valentinog.com/blog/react-webpack-babel/
-- https://jestjs.io/docs/en/tutorial-react#snapshot-testing-with-mocks-enzyme-and-react-16
-- https://testing-library.com/docs/react-testing-library/api
-
-## todos
-- [ ] Add: semver number for every build files.
-- [ ] Add: need output css files.
-- [ ] Add: PWA support for docs.
-- [ ] Add: source.map file for dist(`you can upload for production debug`).
-- [ ] BUG: npm run dev will clean dist.
