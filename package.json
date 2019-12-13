@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/react-spinner",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Spinner for react.",
   "main": "dist/index.js",
   "scripts": {
