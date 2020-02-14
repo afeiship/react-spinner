@@ -16,7 +16,6 @@ npm update @feizheng/react-spinner
 | --------- | ------- | ----------------- | ------------------------------------- |
 | className | string  | -                 | The extended className for component. |
 | value     | bool    | false             | The spinner visible value.            |
-| onChange  | func    | -                 | The change handler.                   |
 | indicator | element | `<img src="#" />` | The indicator element.                |
 | caption   | any     | 'loading'         | The indicator text.                   |
 
