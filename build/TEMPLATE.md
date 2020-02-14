@@ -12,13 +12,13 @@ npm update @feizheng/react-spinner
 ```
 
 ## properties
-| Name      | Type    | Default         | Description                           |
-| --------- | ------- | --------------- | ------------------------------------- |
-| className | string  | -               | The extended className for component. |
-| value     | bool    | false           | The spinner visible value.            |
-| onChange  | func    | -               | The change handler.                   |
-| indicator | element | <img src="#" /> | The indicator element.                |
-| caption   | any     | 'loading'       | The indicator text.                   |
+| Name      | Type    | Default           | Description                           |
+| --------- | ------- | ----------------- | ------------------------------------- |
+| className | string  | -                 | The extended className for component. |
+| value     | bool    | false             | The spinner visible value.            |
+| onChange  | func    | -                 | The change handler.                   |
+| indicator | element | `<img src="#" />` | The indicator element.                |
+| caption   | any     | 'loading'         | The indicator text.                   |
 
 __GENERATE_DOCS__
 
