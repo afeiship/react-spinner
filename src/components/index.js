@@ -6,23 +6,41 @@ import noop from '@feizheng/noop';
 import objectAssign from 'object-assign';
 
 const CLASS_NAME = 'react-spinner';
+const DEFAULT_INDICATOR = (
+  <img
+    className="is-image"
+    src={'https://assets-cdn.shimo.im/assets/images/loading-b67e5a67dc.gif'}
+  />
+);
 
-export default class extends Component {
+export default class ReactSpinner extends Component {
   static displayName = CLASS_NAME;
+  static version = '__VERSION__';
   static propTypes = {
+    /**
+     * The extended className for component.
+     */
     className: PropTypes.string,
+    /**
+     * The spinner visible value.
+     */
     value: PropTypes.bool,
+    /**
+     * The change handler.
+     */
+    onChange: PropTypes.func,
+    /**
+     * The indicator element.
+     */
     indicator: PropTypes.element,
+    /**
+     * The indicator text.
+     */
     caption: PropTypes.any
   };
 
   static defaultProps = {
-    indicator: (
-      <img
-        className="is-image"
-        src={'https://assets-cdn.shimo.im/assets/images/loading-b67e5a67dc.gif'}
-      />
-    ),
+    indicator: DEFAULT_INDICATOR,
     caption: 'loading',
     value: false
   };

@@ -6,17 +6,32 @@
 npm install -S @feizheng/react-spinner
 ```
 
+## update
+```shell
+npm update @feizheng/react-spinner
+```
+
+## properties
+| Name      | Type    | Default         | Description                           |
+| --------- | ------- | --------------- | ------------------------------------- |
+| className | string  | -               | The extended className for component. |
+| value     | bool    | false           | The spinner visible value.            |
+| onChange  | func    | -               | The change handler.                   |
+| indicator | element | <img src="#" /> | The indicator element.                |
+| caption   | any     | 'loading'       | The indicator text.                   |
+
+
 ## usage
 1. import css
   ```scss
-  @import "~react-spinner/style.scss";
+  @import "~@feizheng/react-spinner/dist/style.scss";
 
   // customize your styles:
   $react-spinner-options: ()
   ```
 2. import js
   ```js
-  import ReactSpinner from '../src/main';
+  import ReactSpinner from '@feizheng/react-spinner';
   import ReactDOM from 'react-dom';
   import React from 'react';
   import './assets/style.scss';
@@ -32,12 +47,12 @@ npm install -S @feizheng/react-spinner
         svg: musicSvg
       };
     }
-    onClick1 = (inEvent) => {
+    handleClick1 = (inEvent) => {
       const { loading } = this.state;
       this.setState({ loading: !loading, svg: musicSvg });
     };
 
-    onClick2 = (inEvent) => {
+    handleClick2 = (inEvent) => {
       const { loading } = this.state;
       this.setState({ loading: !loading, svg: wedgesSvg });
     };
@@ -46,10 +61,10 @@ npm install -S @feizheng/react-spinner
       const { loading, svg } = this.state;
       return (
         <div className="app-container">
-          <button className="button" onClick={this.onClick1}>
+          <button className="button" onClick={this.handleClick1}>
             Toggle Loading - Music
           </button>
-          <button className="button" onClick={this.onClick2}>
+          <button className="button" onClick={this.handleClick2}>
             Toggle Loading - WedgesSvg
           </button>
           <ReactSpinner value={loading} indicator={<img src={svg} />}>
@@ -69,6 +84,7 @@ npm install -S @feizheng/react-spinner
   }
 
   ReactDOM.render(<App />, document.getElementById('app'));
+
   ```
 
 ## documentation

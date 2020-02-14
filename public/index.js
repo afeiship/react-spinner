@@ -14,12 +14,12 @@ class App extends React.Component {
       svg: musicSvg
     };
   }
-  onClick1 = (inEvent) => {
+  handleClick1 = (inEvent) => {
     const { loading } = this.state;
     this.setState({ loading: !loading, svg: musicSvg });
   };
 
-  onClick2 = (inEvent) => {
+  handleClick2 = (inEvent) => {
     const { loading } = this.state;
     this.setState({ loading: !loading, svg: wedgesSvg });
   };
@@ -28,10 +28,10 @@ class App extends React.Component {
     const { loading, svg } = this.state;
     return (
       <div className="app-container">
-        <button className="button" onClick={this.onClick1}>
+        <button className="button" onClick={this.handleClick1}>
           Toggle Loading - Music
         </button>
-        <button className="button" onClick={this.onClick2}>
+        <button className="button" onClick={this.handleClick2}>
           Toggle Loading - WedgesSvg
         </button>
         <ReactSpinner value={loading} indicator={<img src={svg} />}>
