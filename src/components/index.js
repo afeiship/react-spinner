@@ -26,10 +26,6 @@ export default class ReactSpinner extends Component {
      */
     value: PropTypes.bool,
     /**
-     * The change handler.
-     */
-    onChange: PropTypes.func,
-    /**
      * The indicator element.
      */
     indicator: PropTypes.element,
