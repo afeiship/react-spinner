@@ -1,6 +1,7 @@
-import ReactSpinner from '../src/main';
-import ReactDOM from 'react-dom';
+import ReactDemokit from '@jswork/react-demokit';
 import React from 'react';
+import ReactDOM from 'react-dom';
+import ReactSpinner from '../src/main';
 import './assets/style.scss';
 
 import musicSvg from './assets/music-1080px.svg';
@@ -14,6 +15,7 @@ class App extends React.Component {
       svg: musicSvg
     };
   }
+
   handleClick1 = (inEvent) => {
     const { loading } = this.state;
     this.setState({ loading: !loading, svg: musicSvg });
@@ -26,26 +28,33 @@ class App extends React.Component {
 
   render() {
     const { loading, svg } = this.state;
+
     return (
-      <div className="app-container">
-        <button className="button" onClick={this.handleClick1}>
+      <ReactDemokit
+        className="p-3 app-container"
+        url="https://github.com/afeiship/react-spinner">
+        <button
+          className="button mb-2 is-fullwidth is-primary"
+          onClick={this.handleClick1}>
           Toggle Loading - Music
         </button>
-        <button className="button" onClick={this.handleClick2}>
+        <button
+          className="button mb-2 is-fullwidth is-info"
+          onClick={this.handleClick2}>
           Toggle Loading - WedgesSvg
         </button>
         <ReactSpinner value={loading} indicator={<img src={svg} />}>
           <img
+            hidden
             width="100%"
             src="https://yt-adp.ws.126.net/linxue/7001123_axeu_20191122.jpg"
           />
           <img
-            hidden
             width="100%"
             src="http://cms-bucket.ws.126.net/2019/11/25/886cba5835d2491798fe3d6584778129.png"
           />
         </ReactSpinner>
-      </div>
+      </ReactDemokit>
     );
   }
 }
